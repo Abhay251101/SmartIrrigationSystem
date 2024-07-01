@@ -1,0 +1,81 @@
+/* Custom CSS for Weather App */
+body {
+    background-color: lavender;
+  }
+  
+  .navbar {
+    background-color: rgb(176, 253, 176); 
+    margin-bottom: 50px;
+  }
+  
+  
+  .navbar-brand {
+    color: black !important;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: black !important;
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .nav-link:hover{
+    color: blue;
+  }
+  
+  .card-header {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .card {
+    border: none;
+  }
+  #cityInput{
+    margin-left: 300px;
+    width: 500px;
+    border: 3px solid grey;
+  }
+
+  .btn-outline-success {
+    border-color: #4CAF50;
+    color: #4CAF50;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+  }
+  
+  .text-bg-primary {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  th,
+  td {
+    border: none !important;
+  }
+  
+  .table-responsive {
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  

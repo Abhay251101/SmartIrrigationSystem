@@ -1,0 +1,344 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('/loginsignup/irrigation system/images/3543885.jpg'); /* Add your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.crops{
+    position: relative;
+    margin-left: 10px;
+    width: 880px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.crop-info {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.crop-info img {
+    float: right;
+    margin-right: 70px;
+    width: 250px; /* Adjust as needed */
+    height: 160px;
+    border-radius: 9px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color */
+}
+
+p {
+    margin-bottom: 8px;
+}
+/* MAP */
+.map{
+    position: absolute;
+    top: 580px;
+    right: 40px;
+}
+.map img, map2-img {
+    height: 700px;
+    width: 500px;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: white;
+}
+.map2-img {
+    height: 620px;
+    width: 500px;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 80px;
+}
+.mapdetails, .map2-details{
+    width: 500px;
+    color: white;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+
+
+
+/* Navbar Styles */
+
+.navbar {
+    background-color: rgb(43, 79, 43);
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display items horizontally */
+}
+
+.navbar-links li {
+    margin-right: 40px;
+    margin-top: 3px;
+}
+
+.navbar-links a {
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar-links a:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Moving headline */
+.moving-headline {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure full width of the navbar */
+    background-color:lavender; /* Match navbar background */
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+}
+
+.moving-headline span {
+    margin-right: 10px;
+}
+
+.weather-info {
+    font-size: 22px;
+    margin: auto;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+}
+/* Add margin to separate icon and text */
+
+.weather-info i {
+    margin-right: 10px !important; /* Use !important to override any conflicting styles */
+}
+
+
+
+.search-form {
+    margin-left: auto; /* Push search form to the right */
+    margin-right: 40px;
+}
+
+.search-form input[type="text"] {
+    flex: 1; 
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    width: 300px;
+}
+
+.search-form button {
+    padding: 8px 12px; /* Adjust padding as needed */
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Content Layout */
+.main-content {
+    max-width: 1400px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.left-content h1 {
+    text-decoration: underline;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.left-content  {
+    flex: 1; 
+    padding: 20px;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.right-content img {
+    top: 40px;
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    padding: 10px;
+}
+.smart{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: 30px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    padding: 5px;
+}
+
+.irrigation-info h2 {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .container,
+    .container-navbar {
+        padding: 0 10px;
+    }
+
+    .navbar-links ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+
+    .search-form {
+        margin: 10px auto; /* Center align search form */
+    }
+
+    .search-form input[type="text"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+.father{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+.carousel p{
+    color: white;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* Carousel */
+.father{
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+.father-img{
+    margin-top: 100px;
+}
+.father-img ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    list-style-type: none;
+    padding: 0;
+}
+
+.father-img li {
+    width: 30%; /* Adjust as needed */
+    margin: 10px;
+    text-align: center;
+}
+.father-img ul li p {
+    text-decoration: underline;
+    font-style: italic;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+.father-img ul li h2{
+    color: white;
+    text-decoration: underline;
+}
+
+/* FOTTER */
+.footer {
+    background-color: rgb(43, 79, 43);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/* Style for footer links */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 30px; /* Adjust the font size here */
+}
+
+/* Flexbox styles for centering */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.footer-text{
+    margin: 0;
+}
+.fotter-text p {
+    margin-bottom: 0px;
+}
+.footer a:hover{
+    color: blue;
+}
